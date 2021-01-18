@@ -12,6 +12,19 @@ color: black;
     padding:5px;
 }
 
+.rotated {
+    transform: rotate(270deg); /* Equal to rotateZ(45deg) */
+
+}
+
+/*.rotateimg90 {*/
+/*    -webkit-transform:rotate(90deg);*/
+/*    -moz-transform: rotate(90deg);*/
+/*    -ms-transform: rotate(90deg);*/
+/*    -o-transform: rotate(90deg);*/
+/*    transform: rotate(90deg);*/
+/*}*/
+
 
 * {
     box-sizing: border-box;
