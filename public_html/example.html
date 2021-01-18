@@ -11,95 +11,98 @@
 
 
 
-<!--    <link rel="stylesheet" href="/CSS/style.css" type="text/css"/>-->
+    <link rel="stylesheet" href="/CSS/style.css" type="text/css"/>
     <style>
-        * {
-            box-sizing: border-box;
+        a.vlightbox0 {
+            color: black;
         }
-        h1 {
-            text-align: center;
-        }
-        .ImgThumbnail {
-            border-radius: 5px;
-            cursor: pointer;
-            transition: 0.3s;
-            height: 250px;
-            width: 250px;
-        }
-        .ImgThumbnail:nth-of-type(1) {
+/*<!--        * {-->*/
+/*<!--            box-sizing: border-box;-->*/
+/*<!--        }-->*/
+/*<!--        h1 {-->*/
+/*<!--            text-align: center;-->*/
+/*<!--        }-->*/
+/*<!--        .ImgThumbnail {-->*/
+/*<!--            border-radius: 5px;-->*/
+/*<!--            cursor: pointer;-->*/
+/*<!--            transition: 0.3s;-->*/
+/*<!--            height: 250px;-->*/
+/*<!--            width: 250px;-->*/
+/*<!--        }-->*/
+/*<!--        .ImgThumbnail:nth-of-type(1) {-->*/
 
-        }
-        /* On hover, add a black background color with a little bit see-through */
-        .prev:hover,
-        .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-        img.demo {
-            opacity: 0.6;
-        }
+/*<!--        }-->*/
+/*<!--        !* On hover, add a black background color with a little bit see-through *!-->*/
+/*<!--        .prev:hover,-->*/
+/*<!--        .next:hover {-->*/
+/*<!--            background-color: rgba(0, 0, 0, 0.8);-->*/
+/*<!--        }-->*/
+/*<!--        img.demo {-->*/
+/*<!--            opacity: 0.6;-->*/
+/*<!--        }-->*/
 
-        .active,
-        .demo:hover {
-            opacity: 1;
-        }
+/*<!--        .active,-->*/
+/*<!--        .demo:hover {-->*/
+/*<!--            opacity: 1;-->*/
+/*<!--        }-->*/
 
-        img.hover-shadow {
-            transition: 0.3s;
-        }
+/*<!--        img.hover-shadow {-->*/
+/*<!--            transition: 0.3s;-->*/
+/*<!--        }-->*/
 
-        .hover-shadow:hover {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            padding-top: 50px;
-            padding-bottom: 50px;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgb(0, 0, 0);
-            background-color: rgba(0, 0, 0, 0.9);
-        }
-        .modalImage {
-            margin: auto;
-            display: block;
-            width: 90%;
-            height: 90%;
-            max-width: 700px;
-        }
-        #caption {
-            margin: auto;
-            display: block;
-            width: 80%;
-            max-width: 700px;
-            text-align: center;
-            color: #ccc;
-            padding: 10px 0;
-            height: 150px;
-        }
-        .close {
-            position: absolute;
-            top: 15px;
-            right: 35px;
-            color: #f1f1f1;
-            font-size: 40px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-        .close:hover,
-        .close:focus {
-            color: rgb(255, 0, 0);
-            cursor: pointer;
-        }
-        @media only screen and (max-width: 700px) {
-            .modalImage {
-                width: 100%;
-            }
-        }
+/*<!--        .hover-shadow:hover {-->*/
+/*<!--            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);-->*/
+/*<!--        }-->*/
+/*<!--        .modal {-->*/
+/*<!--            display: none;-->*/
+/*<!--            position: fixed;-->*/
+/*<!--            z-index: 1;-->*/
+/*<!--            padding-top: 50px;-->*/
+/*<!--            padding-bottom: 50px;-->*/
+/*<!--            left: 0;-->*/
+/*<!--            top: 0;-->*/
+/*<!--            width: 100%;-->*/
+/*<!--            height: 100%;-->*/
+/*<!--            overflow: auto;-->*/
+/*<!--            background-color: rgb(0, 0, 0);-->*/
+/*<!--            background-color: rgba(0, 0, 0, 0.9);-->*/
+/*<!--        }-->*/
+/*<!--        .modalImage {-->*/
+/*<!--            margin: auto;-->*/
+/*<!--            display: block;-->*/
+/*<!--            width: 90%;-->*/
+/*<!--            height: 90%;-->*/
+/*<!--            max-width: 700px;-->*/
+/*<!--        }-->*/
+/*<!--        #caption {-->*/
+/*<!--            margin: auto;-->*/
+/*<!--            display: block;-->*/
+/*<!--            width: 80%;-->*/
+/*<!--            max-width: 700px;-->*/
+/*<!--            text-align: center;-->*/
+/*<!--            color: #ccc;-->*/
+/*<!--            padding: 10px 0;-->*/
+/*<!--            height: 150px;-->*/
+/*<!--        }-->*/
+/*<!--        .close {-->*/
+/*<!--            position: absolute;-->*/
+/*<!--            top: 15px;-->*/
+/*<!--            right: 35px;-->*/
+/*<!--            color: #f1f1f1;-->*/
+/*<!--            font-size: 40px;-->*/
+/*<!--            font-weight: bold;-->*/
+/*<!--            transition: 0.3s;-->*/
+/*<!--        }-->*/
+/*<!--        .close:hover,-->*/
+/*<!--        .close:focus {-->*/
+/*<!--            color: rgb(255, 0, 0);-->*/
+/*<!--            cursor: pointer;-->*/
+/*<!--        }-->*/
+/*<!--        @media only screen and (max-width: 700px) {-->*/
+/*<!--            .modalImage {-->*/
+/*<!--                width: 100%;-->*/
+/*<!--            }-->*/
+/*<!--        }-->*/
 </style>
 		<!-- Start VisualLightBox.com HEAD section -->
 
@@ -116,8 +119,8 @@
 
 <body>
 
-<nav class="navbar navbar-custom navbar-expand-lg navbar-dark bg-secondary sticky-top">
-    <a class id="title">MuKha Arts</a>
+<nav class="navbar navbar-custom navbar-expand-lg navbar-light bg-light sticky-top">
+    <a>MuKha Arts</a>
 
     <div class="collapse navbar-collapse" id="navbarNav">
         <button class="navbar-toggler"
@@ -132,16 +135,16 @@
 
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#mission"><span class="sr-only">(current)</span>Home</a>
+                <a class="nav-link" href="./index.html"><span class="sr-only">(current)</span>Home</a>
             </li>
             <li item="nav-item active">
-                <a class="nav-link" href=./public_html/bio.html>Bio</a>
+                <a class="nav-link" href=./bio.html>Bio</a>
             </li>
             <li item="nav-item active">
-                <a class="nav-link" href="#gallery">Projects</a>
+                <a class="nav-link" href="./example.html">Projects</a>
             </li>
             <li item="nav-item active">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="./contact.html">Contact</a>
             </li>
         </ul>
     </div>
@@ -174,123 +177,123 @@
 
 	<!-- End VisualLightBox.com BODY section -->
 
-<div class="container-fluid my-4">
-<h1>Paintings</h1>
-        <div class="row" id="gallery">
-            <div id="mdb-lightbox-ui"></div>
-            <figure class="col-md-3 mb-4">
+<!--<div class="container-fluid my-4">-->
+<!--<h1>Paintings</h1>-->
+<!--        <div class="row" id="gallery">-->
+<!--            <div id="mdb-lightbox-ui"></div>-->
+<!--            <figure class="col-md-3 mb-4">-->
 
-<img
-        class="ImgThumbnail hover-shadow cursor"
-        src="image/MKTheMessage.jpg"
-        alt="The Message">
-                <figcaption>The Message</figcaption>
-            </figure>
-                <figure class="col-md-3 mb-4">
+<!--<img-->
+<!--        class="ImgThumbnail hover-shadow cursor"-->
+<!--        src="image/MKTheMessage.jpg"-->
+<!--        alt="The Message">-->
+<!--                <figcaption>The Message</figcaption>-->
+<!--            </figure>-->
+<!--                <figure class="col-md-3 mb-4">-->
 
-<img
-        class="ImgThumbnail hover-shadow cursor"
-        src="image/SpringHail.jpeg"
-        alt="Spring Hail">
-                <figcaption>Spring Hail</figcaption>
-            </figure>
-                <figure class="col-md-3 mb-4">
+<!--<img-->
+<!--        class="ImgThumbnail hover-shadow cursor"-->
+<!--        src="image/SpringHail.jpeg"-->
+<!--        alt="Spring Hail">-->
+<!--                <figcaption>Spring Hail</figcaption>-->
+<!--            </figure>-->
+<!--                <figure class="col-md-3 mb-4">-->
 
-<img
-        class="ImgThumbnail hover-shadow cursor"
-        src="image/MechanicsOfTransition2007.jpeg"
-        alt="Mechanics of Transition">
-                    <figcaption>Mechanics of Transition</figcaption>
-                </figure>
-                    <figure class="col-md-3 mb-4">
+<!--<img-->
+<!--        class="ImgThumbnail hover-shadow cursor"-->
+<!--        src="image/MechanicsOfTransition2007.jpeg"-->
+<!--        alt="Mechanics of Transition">-->
+<!--                    <figcaption>Mechanics of Transition</figcaption>-->
+<!--                </figure>-->
+<!--                    <figure class="col-md-3 mb-4">-->
 
 
-<img
-        class="ImgThumbnail hover-shadow cursor"
-        src="image/BrotherEagle.jpeg"
-        alt="Brother Eagle">
-                        <figcaption>Brother Eagle</figcaption>
-                    </figure>
-                        <figure class="col-md-3 mb-4">
-<img
-        class="ImgThumbnail hover-shadow cursor"
-        src="image/StealerOfStrenght.jpeg"
-        alt="Stealer of Strength">
-                            <figcaption>Stealer of Strength</figcaption>
-                        </figure>
-            <figure class="col-md-3 mb-4">
-                <img
-                        class="ImgThumbnail hover-shadow cursor"
-                        src="image/TemporaryAscent.jpeg"
-                        alt="Temporary Ascent">
-                <figcaption>Temporary Ascent</figcaption>
-            </figure>
-                            <figure class="col-md-3 mb-4">
-<img
-        class="ImgThumbnail hover-shadow cursor"
-        src="image/SoftlyExhaling.jpeg"
-        alt="Softly Exhaling">
-                                <figcaption>Softly Exhaling</figcaption>
-                            </figure>
-                                <figure class="col-md-3 mb-4">
-<img
-        class="ImgThumbnail hover-shadow cursor"
-        src="image/InnerForest.jpeg"
-        alt="Inner Forest Music">
-                                    <figcaption>Inner Forest Music</figcaption>
-                                </figure>
-                                    <figure class="col-md-3 mb-4">
-<img
-        class="ImgThumbnail hover-shadow cursor"
-        src="image/BalloonRanger.jpeg"
-        alt="Balloon Ranger">
-                                        <figcaption>Balloon Ranger</figcaption>
-                                    </figure>
-                                        <figure class="col-md-3 mb-4">
-<img
-        class="ImgThumbnail hover-shadow cursor"
-        src="image/TheCrossing.jpeg"
-        alt="The Crossing">
-                                            <figcaption>The Crossing</figcaption>
-                                        </figure>
-                                            <figure class="col-md-3 mb-4">
-<img
-        class="ImgThumbnail hover-shadow cursor"
-        src="image/MuKhaForce.jpeg"
-        alt="MuKha Force">
-                                                <figcaption>MuKha Force</figcaption>
-                                            </figure>
-                                                <figure class="col-md-3 mb-4">
-<img
-        class="ImgThumbnail hover-shadow cursor"
-        src="image/TheColorOfBern.jpeg"
-        alt="The Color of Bern">
-                                                    <figcaption>The Color of Bern</figcaption>
-                                                </figure>
+<!--<img-->
+<!--        class="ImgThumbnail hover-shadow cursor"-->
+<!--        src="image/BrotherEagle.jpeg"-->
+<!--        alt="Brother Eagle">-->
+<!--                        <figcaption>Brother Eagle</figcaption>-->
+<!--                    </figure>-->
+<!--                        <figure class="col-md-3 mb-4">-->
+<!--<img-->
+<!--        class="ImgThumbnail hover-shadow cursor"-->
+<!--        src="image/StealerOfStrenght.jpeg"-->
+<!--        alt="Stealer of Strength">-->
+<!--                            <figcaption>Stealer of Strength</figcaption>-->
+<!--                        </figure>-->
+<!--            <figure class="col-md-3 mb-4">-->
+<!--                <img-->
+<!--                        class="ImgThumbnail hover-shadow cursor"-->
+<!--                        src="image/TemporaryAscent.jpeg"-->
+<!--                        alt="Temporary Ascent">-->
+<!--                <figcaption>Temporary Ascent</figcaption>-->
+<!--            </figure>-->
+<!--                            <figure class="col-md-3 mb-4">-->
+<!--<img-->
+<!--        class="ImgThumbnail hover-shadow cursor"-->
+<!--        src="image/SoftlyExhaling.jpeg"-->
+<!--        alt="Softly Exhaling">-->
+<!--                                <figcaption>Softly Exhaling</figcaption>-->
+<!--                            </figure>-->
+<!--                                <figure class="col-md-3 mb-4">-->
+<!--<img-->
+<!--        class="ImgThumbnail hover-shadow cursor"-->
+<!--        src="image/InnerForest.jpeg"-->
+<!--        alt="Inner Forest Music">-->
+<!--                                    <figcaption>Inner Forest Music</figcaption>-->
+<!--                                </figure>-->
+<!--                                    <figure class="col-md-3 mb-4">-->
+<!--<img-->
+<!--        class="ImgThumbnail hover-shadow cursor"-->
+<!--        src="image/BalloonRanger.jpeg"-->
+<!--        alt="Balloon Ranger">-->
+<!--                                        <figcaption>Balloon Ranger</figcaption>-->
+<!--                                    </figure>-->
+<!--                                        <figure class="col-md-3 mb-4">-->
+<!--<img-->
+<!--        class="ImgThumbnail hover-shadow cursor"-->
+<!--        src="image/TheCrossing.jpeg"-->
+<!--        alt="The Crossing">-->
+<!--                                            <figcaption>The Crossing</figcaption>-->
+<!--                                        </figure>-->
+<!--                                            <figure class="col-md-3 mb-4">-->
+<!--<img-->
+<!--        class="ImgThumbnail hover-shadow cursor"-->
+<!--        src="image/MuKhaForce.jpeg"-->
+<!--        alt="MuKha Force">-->
+<!--                                                <figcaption>MuKha Force</figcaption>-->
+<!--                                            </figure>-->
+<!--                                                <figure class="col-md-3 mb-4">-->
+<!--<img-->
+<!--        class="ImgThumbnail hover-shadow cursor"-->
+<!--        src="image/TheColorOfBern.jpeg"-->
+<!--        alt="The Color of Bern">-->
+<!--                                                    <figcaption>The Color of Bern</figcaption>-->
+<!--                                                </figure>-->
 
-        </div>
+<!--        </div>-->
 
-<!-- The Modal -->
-<div class="modal">
-    <span class="close">&times;</span>
-    <img class="modalImage" id="img01" />
-</div>
+<!--&lt;!&ndash; The Modal &ndash;&gt;-->
+<!--<div class="modal">-->
+<!--    <span class="close">&times;</span>-->
+<!--    <img class="modalImage" id="img01" />-->
+<!--</div>-->
 
-</div>
+<!--</div>-->
 
-<script>
-    var modalEle = document.querySelector(".modal");
-    var modalImage = document.querySelector(".modalImage");
-    Array.from(document.querySelectorAll(".ImgThumbnail")).forEach(item => {
-        item.addEventListener("click", event => {
-            modalEle.style.display = "block";
-            modalImage.src = event.target.src;
-        });
-    });
-    document.querySelector(".close").addEventListener("click", () => {
-        modalEle.style.display = "none";
-    });
-</script>
+<!--<script>-->
+<!--    var modalEle = document.querySelector(".modal");-->
+<!--    var modalImage = document.querySelector(".modalImage");-->
+<!--    Array.from(document.querySelectorAll(".ImgThumbnail")).forEach(item => {-->
+<!--        item.addEventListener("click", event => {-->
+<!--            modalEle.style.display = "block";-->
+<!--            modalImage.src = event.target.src;-->
+<!--        });-->
+<!--    });-->
+<!--    document.querySelector(".close").addEventListener("click", () => {-->
+<!--        modalEle.style.display = "none";-->
+<!--    });-->
+<!--</script>-->
 
 </body>
 </html>
