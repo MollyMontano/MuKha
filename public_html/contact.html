@@ -15,9 +15,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Dancing+Script&family=Kaushan+Script&family=Lobster&family=Satisfy&family=Sriracha&display=swap"
           rel="stylesheet">
 
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+          <style>
+              p{
+                  padding: 20px;
+                  background: rgba(0, 0, 0, 0.10);
+                  color: #fff;
+                  font: 18px Arial, sans-serif;
+              }
+              body {
+                  margin-top: 50px;
+              }
+          </style>
 </head>
 <nav class="navbar navbar-custom navbar-expand-lg navbar-light bg-light sticky-top">
     <a>MuKha Arts</a>
@@ -38,7 +47,10 @@
                 <a class="nav-link" href="index.html"><span class="sr-only">(current)</span>Home</a>
             </li>
             <li item="nav-item active">
-                <a class="nav-link" href=./bio.html>Bio</a>
+                <a class="nav-link" href=./bio.html>About</a>
+            </li>
+            <li item="nav-item active">
+                <a class="nav-link" href="./example.html">Paintings</a>
             </li>
             <li item="nav-item active">
                 <a class="nav-link" href="./example.html">Projects</a>
@@ -50,62 +62,75 @@
     </div>
 </nav>
 
-</div>
-<section class="container">
+<body>
+
+<div class="container">
     <div class="row">
-        <div class="contact col-md-6 mx-auto">
-            <form id="contact-form" action="./apis/" method="post" novalidate>
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"><i class fa fa-user></i></span>
-                        </div>
-                        <input class="form-control" id="name" name="name" placeholder="Your Name" type="text">
-                    </div>
-                </div>
+        <div class="col-md-6 mx-auto">
+            <img src="image/MuAtRest.jpg" alt="Mu at rest" style="width:600px">
+        </div>
 
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fa fa-envelope"></i> </span>
-                        </div>
-                        <input class="form-control" id="email" name="email" placeholder="Your Email" type="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fa fa-pencil"></i></span>
-                            </div>
-                            <input class="form-control" id="subject" name="subject" placeholder="Subject" type="text">
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fa fa-comment"></i></span>
-                        </div>
-                        <textarea class="form-control" id="message" maxlength="2000" name="message"
-                                  placeholder="Your Message (2000 characters max)" required
-                                  rows="5"></textarea>
-                    </div>
-                </div>
+        <div class="contact col-md-4 mx-auto">
+            <p>Contact:
+                Mu is a painter and photographer who often works with composers, dancers and musicians in collaborative works.
 
-                <div class="g-recaptcha" data-sitekey="6LfyUOMZAAAAAMXU-s11NBXH7R7Z5y1BS7enFDEo"></div>
-
-                <button class="btn btn-info" type="submit">Submit</button>
-                <button class="btn btn-default" type="reset">Reset</button>
-
-            </form>
-
-            <div id="output-area"></div>
-
+mukhaarts@gmail.com
+            </p>
         </div>
     </div>
-</section>
+</div>
+<!--            <form id="contact-form" action="./apis/" method="post" novalidate>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="name">Name</label>-->
+<!--                    <div class="input-group">-->
+<!--                        <div class="input-group-prepend">-->
+<!--                            <span class="input-group-text"><i class fa fa-user></i></span>-->
+<!--                        </div>-->
+<!--                        <input class="form-control" id="name" name="name" placeholder="Your Name" type="text">-->
+<!--                    </div>-->
+<!--                </div>-->
 
+<!--                <div class="form-group">-->
+<!--                    <label for="email">Email</label>-->
+<!--                    <div class="input-group">-->
+<!--                        <div class="input-group-prepend">-->
+<!--                            <span class="input-group-text"><i class="fa fa-envelope"></i> </span>-->
+<!--                        </div>-->
+<!--                        <input class="form-control" id="email" name="email" placeholder="Your Email" type="email">-->
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="subject">Subject</label>-->
+<!--                        <div class="input-group">-->
+<!--                            <div class="input-group-prepend">-->
+<!--                                <span class="input-group-text"><i class="fa fa-pencil"></i></span>-->
+<!--                            </div>-->
+<!--                            <input class="form-control" id="subject" name="subject" placeholder="Subject" type="text">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="message">Message</label>-->
+<!--                    <div class="input-group">-->
+<!--                        <div class="input-group-prepend">-->
+<!--                            <span class="input-group-text"><i class="fa fa-comment"></i></span>-->
+<!--                        </div>-->
+<!--                        <textarea class="form-control" id="message" maxlength="2000" name="message"-->
+<!--                                  placeholder="Your Message (2000 characters max)" required-->
+<!--                                  rows="5"></textarea>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="g-recaptcha" data-sitekey="6LfyUOMZAAAAAMXU-s11NBXH7R7Z5y1BS7enFDEo"></div>-->
+
+<!--                <button class="btn btn-info" type="submit">Submit</button>-->
+<!--                <button class="btn btn-default" type="reset">Reset</button>-->
+
+<!--            </form>-->
+
+<!--            <div id="output-area"></div>-->
+
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+</body>
 </html>
